@@ -34,6 +34,39 @@ Once running:
 
 ---
 
+## Application Screenshots
+
+Captured from the live Docker Compose stack running behind Nginx:
+
+### Public Catalog, Authentication & Checkout Hold Flow
+| Public Event Discovery (`/`) | Sign In (`/login`) |
+|---|---|
+| ![Public Event Discovery](docs/screenshots/01-public-catalog.png) | ![Sign In](docs/screenshots/02-login.png) |
+
+| Registration (`/register`) | Event Detail & 10-Min Seat Hold Timer (`/events/[id]`) |
+|---|---|
+| ![Create Account](docs/screenshots/03-register.png) | ![Event Detail & Hold Countdown](docs/screenshots/04-event-detail-checkout.png) |
+
+### Attendee Experience: Orders, Cryptographic QR/PDF Tickets, Waitlist & Notifications
+| My Orders & Payment Ledger (`/orders`) | My Tickets with ZXing QR & PDF Export (`/tickets`) |
+|---|---|
+| ![My Orders](docs/screenshots/05-my-orders.png) | ![My QR Tickets](docs/screenshots/06-my-tickets-qr.png) |
+
+| Waitlist Queue (`/waitlist`) | In-App Notifications (`/notifications`) |
+|---|---|
+| ![Waitlist](docs/screenshots/07-waitlist.png) | ![Notifications](docs/screenshots/08-notifications.png) |
+
+### Organizer Studio, Analytics & Mobile Door Scanner
+| Organizer Studio (`/organizer`) | Real-Time Analytics Dashboard (`/organizer/events/[id]`) |
+|---|---|
+| ![Organizer Studio](docs/screenshots/09-organizer-studio.png) | ![Organizer Analytics Dashboard](docs/screenshots/10-organizer-dashboard.png) |
+
+**Mobile Door Check-In Scanner (`/scanner`)** — camera QR scanning (`@zxing/browser`) plus manual fallback & live gate logs:
+
+<img src="docs/screenshots/11-door-scanner.png" alt="Mobile Door Check-In Scanner" width="380" />
+
+---
+
 ## Core Feature Set
 
 ### Identity & Role-Based Access Control
